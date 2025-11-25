@@ -18,3 +18,11 @@ View your app in AI Studio: https://ai.studio/apps/drive/1wv6lRFnJ5xgw2CE0bi8OXx
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploy na Vercel (grátis)
+
+1. Faça fork/importe este repositório para sua conta do GitHub.
+2. No painel da Vercel, clique em **Add New… → Project** e importe o repositório.
+3. Build command: `npm run build` — Output directory: `dist`.
+4. Em **Environment Variables**, adicione `GEMINI_API_KEY` com sua chave do Google Gemini (Production + Preview).
+5. Deploy. A Vercel vai cuidar da função serverless em `api/generate-villain.ts`, mantendo a chave segura.
